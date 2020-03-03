@@ -1,0 +1,6 @@
+framework module liveUpload {
+  umbrella header "liveUpload.h"
+
+  export *
+  module * { export * }
+}

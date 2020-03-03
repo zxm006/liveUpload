@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61CD1F161F317CE8001B0169 /* liveUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F141F317CE8001B0169 /* liveUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61CD1F311F317D06001B0169 /* EncoderAAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F211F317D06001B0169 /* EncoderAAC.h */; };
+		61CD1F321F317D06001B0169 /* EncoderAAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CD1F221F317D06001B0169 /* EncoderAAC.m */; };
+		61CD1F331F317D06001B0169 /* H264HwEncoderImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F231F317D06001B0169 /* H264HwEncoderImpl.h */; };
+		61CD1F341F317D06001B0169 /* H264HwEncoderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CD1F241F317D06001B0169 /* H264HwEncoderImpl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		61CD1F351F317D06001B0169 /* SampleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F251F317D06001B0169 /* SampleHandler.h */; };
+		61CD1F361F317D06001B0169 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CD1F261F317D06001B0169 /* SampleHandler.m */; };
+		61CD1F371F317D06001B0169 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61CD1F271F317D06001B0169 /* Thread.cpp */; };
+		61CD1F381F317D06001B0169 /* Thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F281F317D06001B0169 /* Thread.h */; };
+		61CD1F391F317D06001B0169 /* Uploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F291F317D06001B0169 /* Uploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61CD1F3A1F317D06001B0169 /* Uploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CD1F2A1F317D06001B0169 /* Uploader.m */; };
+		61CD1F3B1F317D06001B0169 /* uuRtmpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61CD1F2B1F317D06001B0169 /* uuRtmpClient.cpp */; };
+		61CD1F3C1F317D06001B0169 /* uuRtmpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CD1F2C1F317D06001B0169 /* uuRtmpClient.h */; };
+		61CD1F3F1F317D39001B0169 /* librtmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F3E1F317D39001B0169 /* librtmp.framework */; };
+		61CD1F411F317D4D001B0169 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F401F317D4D001B0169 /* AudioToolbox.framework */; };
+		61CD1F431F317D55001B0169 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F421F317D55001B0169 /* VideoToolbox.framework */; };
+		61CD1F451F317D5E001B0169 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F441F317D5E001B0169 /* ReplayKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		61CD1F471F317D65001B0169 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F461F317D65001B0169 /* libz.1.2.5.tbd */; };
+		61CD1F491F317DE3001B0169 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F481F317DE3001B0169 /* CoreMedia.framework */; };
+		61CD1F4B1F317E02001B0169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1F4A1F317E02001B0169 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61CD1F111F317CE8001B0169 /* liveUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = liveUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61CD1F141F317CE8001B0169 /* liveUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = liveUpload.h; sourceTree = "<group>"; };
+		61CD1F151F317CE8001B0169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61CD1F211F317D06001B0169 /* EncoderAAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncoderAAC.h; sourceTree = "<group>"; };
+		61CD1F221F317D06001B0169 /* EncoderAAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncoderAAC.m; sourceTree = "<group>"; };
+		61CD1F231F317D06001B0169 /* H264HwEncoderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264HwEncoderImpl.h; sourceTree = "<group>"; };
+		61CD1F241F317D06001B0169 /* H264HwEncoderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264HwEncoderImpl.m; sourceTree = "<group>"; };
+		61CD1F251F317D06001B0169 /* SampleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		61CD1F261F317D06001B0169 /* SampleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		61CD1F271F317D06001B0169 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		61CD1F281F317D06001B0169 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		61CD1F291F317D06001B0169 /* Uploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uploader.h; sourceTree = "<group>"; };
+		61CD1F2A1F317D06001B0169 /* Uploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Uploader.m; sourceTree = "<group>"; };
+		61CD1F2B1F317D06001B0169 /* uuRtmpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uuRtmpClient.cpp; sourceTree = "<group>"; };
+		61CD1F2C1F317D06001B0169 /* uuRtmpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uuRtmpClient.h; sourceTree = "<group>"; };
+		61CD1F3E1F317D39001B0169 /* librtmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = librtmp.framework; path = libs/librtmp.framework; sourceTree = "<group>"; };
+		61CD1F401F317D4D001B0169 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		61CD1F421F317D55001B0169 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		61CD1F441F317D5E001B0169 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		61CD1F461F317D65001B0169 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		61CD1F481F317DE3001B0169 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		61CD1F4A1F317E02001B0169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61CD1F0D1F317CE8001B0169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CD1F4B1F317E02001B0169 /* UIKit.framework in Frameworks */,
+				61CD1F491F317DE3001B0169 /* CoreMedia.framework in Frameworks */,
+				61CD1F471F317D65001B0169 /* libz.1.2.5.tbd in Frameworks */,
+				61CD1F451F317D5E001B0169 /* ReplayKit.framework in Frameworks */,
+				61CD1F431F317D55001B0169 /* VideoToolbox.framework in Frameworks */,
+				61CD1F411F317D4D001B0169 /* AudioToolbox.framework in Frameworks */,
+				61CD1F3F1F317D39001B0169 /* librtmp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61CD1F071F317CE8001B0169 = {
+			isa = PBXGroup;
+			children = (
+				61CD1F1C1F317D06001B0169 /* rtmp-ex */,
+				61CD1F131F317CE8001B0169 /* liveUpload */,
+				61CD1F121F317CE8001B0169 /* Products */,
+				61CD1F3D1F317D39001B0169 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		61CD1F121F317CE8001B0169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61CD1F111F317CE8001B0169 /* liveUpload.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61CD1F131F317CE8001B0169 /* liveUpload */ = {
+			isa = PBXGroup;
+			children = (
+				61CD1F141F317CE8001B0169 /* liveUpload.h */,
+				61CD1F151F317CE8001B0169 /* Info.plist */,
+			);
+			path = liveUpload;
+			sourceTree = "<group>";
+		};
+		61CD1F1C1F317D06001B0169 /* rtmp-ex */ = {
+			isa = PBXGroup;
+			children = (
+				61CD1F211F317D06001B0169 /* EncoderAAC.h */,
+				61CD1F221F317D06001B0169 /* EncoderAAC.m */,
+				61CD1F231F317D06001B0169 /* H264HwEncoderImpl.h */,
+				61CD1F241F317D06001B0169 /* H264HwEncoderImpl.m */,
+				61CD1F251F317D06001B0169 /* SampleHandler.h */,
+				61CD1F261F317D06001B0169 /* SampleHandler.m */,
+				61CD1F271F317D06001B0169 /* Thread.cpp */,
+				61CD1F281F317D06001B0169 /* Thread.h */,
+				61CD1F291F317D06001B0169 /* Uploader.h */,
+				61CD1F2A1F317D06001B0169 /* Uploader.m */,
+				61CD1F2B1F317D06001B0169 /* uuRtmpClient.cpp */,
+				61CD1F2C1F317D06001B0169 /* uuRtmpClient.h */,
+			);
+			path = "rtmp-ex";
+			sourceTree = "<group>";
+		};
+		61CD1F3D1F317D39001B0169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61CD1F4A1F317E02001B0169 /* UIKit.framework */,
+				61CD1F481F317DE3001B0169 /* CoreMedia.framework */,
+				61CD1F461F317D65001B0169 /* libz.1.2.5.tbd */,
+				61CD1F441F317D5E001B0169 /* ReplayKit.framework */,
+				61CD1F421F317D55001B0169 /* VideoToolbox.framework */,
+				61CD1F401F317D4D001B0169 /* AudioToolbox.framework */,
+				61CD1F3E1F317D39001B0169 /* librtmp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61CD1F0E1F317CE8001B0169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CD1F391F317D06001B0169 /* Uploader.h in Headers */,
+				61CD1F331F317D06001B0169 /* H264HwEncoderImpl.h in Headers */,
+				61CD1F351F317D06001B0169 /* SampleHandler.h in Headers */,
+				61CD1F161F317CE8001B0169 /* liveUpload.h in Headers */,
+				61CD1F381F317D06001B0169 /* Thread.h in Headers */,
+				61CD1F311F317D06001B0169 /* EncoderAAC.h in Headers */,
+				61CD1F3C1F317D06001B0169 /* uuRtmpClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61CD1F101F317CE8001B0169 /* liveUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61CD1F191F317CE8001B0169 /* Build configuration list for PBXNativeTarget "liveUpload" */;
+			buildPhases = (
+				61CD1F0C1F317CE8001B0169 /* Sources */,
+				61CD1F0D1F317CE8001B0169 /* Frameworks */,
+				61CD1F0E1F317CE8001B0169 /* Headers */,
+				61CD1F0F1F317CE8001B0169 /* Resources */,
+				61CD1F4E1F317E6D001B0169 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = liveUpload;
+			productName = liveUpload;
+			productReference = 61CD1F111F317CE8001B0169 /* liveUpload.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61CD1F081F317CE8001B0169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhangxinming;
+				TargetAttributes = {
+					61CD1F101F317CE8001B0169 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 46HJEUMF7R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 61CD1F0B1F317CE8001B0169 /* Build configuration list for PBXProject "liveUpload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 61CD1F071F317CE8001B0169;
+			productRefGroup = 61CD1F121F317CE8001B0169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61CD1F101F317CE8001B0169 /* liveUpload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61CD1F0F1F317CE8001B0169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61CD1F4E1F317E6D001B0169 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${ACTION}\" = \"build\" ]\nthen\nINSTALL_DIR=${SRCROOT}/Products/${PROJECT_NAME}.framework\n\nDEVICE_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\n\nSIMULATOR_DIR=${BUILD_ROOT}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\n\n\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n#ditto \"${DEVICE_DIR}/Headers\" \"${INSTALL_DIR}/Headers\"\n\nlipo -create \"${DEVICE_DIR}/${PROJECT_NAME}\" \"${SIMULATOR_DIR}/${PROJECT_NAME}\" -output \"${INSTALL_DIR}/${PROJECT_NAME}\"\n\n#open \"${DEVICE_DIR}\"\n#open \"${SRCROOT}/Products\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61CD1F0C1F317CE8001B0169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CD1F3A1F317D06001B0169 /* Uploader.m in Sources */,
+				61CD1F321F317D06001B0169 /* EncoderAAC.m in Sources */,
+				61CD1F361F317D06001B0169 /* SampleHandler.m in Sources */,
+				61CD1F3B1F317D06001B0169 /* uuRtmpClient.cpp in Sources */,
+				61CD1F341F317D06001B0169 /* H264HwEncoderImpl.m in Sources */,
+				61CD1F371F317D06001B0169 /* Thread.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61CD1F171F317CE8001B0169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61CD1F181F317CE8001B0169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61CD1F1A1F317CE8001B0169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 46HJEUMF7R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				INFOPLIST_FILE = liveUpload/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangxinming.liveUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		61CD1F1B1F317CE8001B0169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 46HJEUMF7R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				INFOPLIST_FILE = liveUpload/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangxinming.liveUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61CD1F0B1F317CE8001B0169 /* Build configuration list for PBXProject "liveUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61CD1F171F317CE8001B0169 /* Debug */,
+				61CD1F181F317CE8001B0169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61CD1F191F317CE8001B0169 /* Build configuration list for PBXNativeTarget "liveUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61CD1F1A1F317CE8001B0169 /* Debug */,
+				61CD1F1B1F317CE8001B0169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61CD1F081F317CE8001B0169 /* Project object */;
+}
